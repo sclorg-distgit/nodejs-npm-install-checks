@@ -4,10 +4,10 @@
 %nodejs_find_provides_and_requires
 
 Name:           %{?scl_prefix}nodejs-npm-install-checks
-Version:        1.0.6
-Release:        3%{?dist}
+Version:        3.0.0
+Release:        1%{?dist}
 Summary:        Install checks for NPM
-License:        BSD-2-Clause
+License:        BSD
 Url:            https://github.com/npm/npm-install-checks
 Source:         http://registry.npmjs.org/npm-install-checks/-/npm-install-checks-%{version}.tgz
 BuildArch:      noarch
@@ -34,6 +34,9 @@ cp -pr package.json index.js \
 %{nodejs_sitelib}/npm-install-checks
 
 %changelog
+* Tue Jan 17 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 3.0.0-1
+- Update, correct license name
+
 * Tue Feb 16 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.0.6-3
 - Use macro in -runtime dependency
 
